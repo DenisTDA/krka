@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Adress, type: :model do
   describe 'associations' do
-#    it { should belong_to(:category).class_name('MenuCategory') }
+    it { should have_many(:pharmacies) }
   end
 
   describe 'validations' do
